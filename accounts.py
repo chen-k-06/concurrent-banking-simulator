@@ -1,11 +1,14 @@
-from threading import Lock
 from account import Account
 
-def deposit(user, amount):
-    pass
+def transfer(sender: Account, receiver: Account, amount: float):
+    # acquire locks in consistent order to prevent deadlocks 
+    first, second = (sender, receiver) if sender.owner > receiver.owner else (receiver, sender)
 
-def withdraw(user, amount):
-    pass
+    with first.lock:
+        with second.lock: 
+            if sender.amount >= amount: 
+                sender.amount -= amount
+                receiver.amount += amount
+                return True
+            return False 
 
-def transfer(sender, receiver, amount):
-    pass
