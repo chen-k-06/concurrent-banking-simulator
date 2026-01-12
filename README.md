@@ -33,9 +33,10 @@ ops2 = [
 
 All accounts valid. Total system balance: 3575.
 
+```text
 Transaction Log:
 2026-01-12 07:53:50: Deposit $100 to Alice: SUCCESS
 2026-01-12 07:53:50: Transfer $50 to Bob from Alice: SUCCESS
 2026-01-12 07:53:50: Withdraw $25 from Bob: SUCCESS
 2026-01-12 07:53:50: Transfer $200 to Alice from Charlie: SUCCESS
-
+```
