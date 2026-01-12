@@ -30,10 +30,9 @@ ops2 = [
 ]
 ```
 ### Output
-
+```text
 All accounts valid. Total system balance: 3575.
 
-```text
 Transaction Log:
 2026-01-12 07:53:50: Deposit $100 to Alice: SUCCESS
 2026-01-12 07:53:50: Transfer $50 to Bob from Alice: SUCCESS
