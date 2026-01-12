@@ -18,5 +18,5 @@ def validate_accounts(accounts: dict):
             print("Account %s has negative balance.", account.owner)
             return 
         total += account.balance
-    print("All accounts valid. Total system balance: %d\n", total)
+    print(f"All accounts valid. Total system balance: {total}.")
     return

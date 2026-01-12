@@ -24,9 +24,9 @@ def transfer(sender: Account, receiver: Account, amount: float):
 
     with first.lock:
         with second.lock: 
-            if sender.amount >= amount: 
-                sender.amount -= amount
-                receiver.amount += amount
+            if sender.balance >= amount: 
+                sender.balance -= amount
+                receiver.balance += amount
                 return True
             return False 
 
